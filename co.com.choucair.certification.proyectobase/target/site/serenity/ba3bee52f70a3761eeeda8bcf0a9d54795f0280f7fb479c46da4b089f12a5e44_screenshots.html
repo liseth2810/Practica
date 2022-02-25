@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 21-02-2022 20:45</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 24-02-2022 04:55</span>
     <br style="clear:left"/>
 </div>
 
@@ -198,9 +198,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon fa-2x' title='PENDING'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="pending-color">Search for a automation course
+                                <span class="failing-color">Search for a automation course
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -217,12 +217,65 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: (true) but: was (false)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.heFindsTheCourseCalledResourcesAutomatizaciònDePruebas(ChoucairAcademyStepDefinitions.java:47)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource5726802000814899756.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="5e23120fb744797549175e4d83fd5de66ca1e87e5b5540498542420bf0e34e7d.png" title=" Given than brandon wants to learn automation at the academy Choucair" width="1920"/>
                 <img src="5e23120fb744797549175e4d83fd5de66ca1e87e5b5540498542420bf0e34e7d.png" title=" Brandon open up" width="1920"/>
                 <img src="5e23120fb744797549175e4d83fd5de66ca1e87e5b5540498542420bf0e34e7d.png" title=" Brandon opens the Choucair academy page" width="1920"/>
-                <img src="5e23120fb744797549175e4d83fd5de66ca1e87e5b5540498542420bf0e34e7d.png" title=" Brandon open up (completed): <span class='pending-color'>PENDING</span>" width="1920"/>
+                <img src="5e23120fb744797549175e4d83fd5de66ca1e87e5b5540498542420bf0e34e7d.png" title=" Brandon open up (completed)" width="1920"/>
+                <img src="96eee83cb4d5f53037a11f3f399cee9b4bc069de5242f1d01e6fd9686c905c5c.png" title=" Brandon login" width="1920"/>
+                <img src="96eee83cb4d5f53037a11f3f399cee9b4bc069de5242f1d01e6fd9686c905c5c.png" title=" Brandon clicks on button that shows us the form to login" width="1920"/>
+                <img src="e61169b12d0061a22c7df006bad66e6dab0c21b366f1a58bf536cc5bffa9cd85.png" title=" Brandon enters 'ltroncosoa' into where do we write the user" width="1920"/>
+                <img src="ee1a8e6a5b36b66ef82c0f358d4d72cb5614c43382d6f15653033dde31c3b1f4.png" title=" Brandon enters 'Choucair2022*' into where do we write the password" width="1920"/>
+                <img src="3c5be8703a574ac3f48bba34ab2c59bb273fc1c13fed9aac7eafa771c4d3f99a.png" title=" Brandon clicks on button to confirm login" width="1920"/>
+                <img src="3c5be8703a574ac3f48bba34ab2c59bb273fc1c13fed9aac7eafa771c4d3f99a.png" title=" Brandon login (completed)" width="1920"/>
+                <img src="3c5be8703a574ac3f48bba34ab2c59bb273fc1c13fed9aac7eafa771c4d3f99a.png" title=" Given than brandon wants to learn automation at the academy Choucair (completed)" width="1920"/>
+                <img src="092d3bc639b52a9d538596d7dc3bf7ffe3cfe2de74e18f92dcfdfc13f42ebc41.png" title=" When he search of the course Automatizaci&ograve;n de Pruebas on the choucair academy platform" width="1920"/>
+                <img src="092d3bc639b52a9d538596d7dc3bf7ffe3cfe2de74e18f92dcfdfc13f42ebc41.png" title=" Brandon search" width="1920"/>
+                <img src="092d3bc639b52a9d538596d7dc3bf7ffe3cfe2de74e18f92dcfdfc13f42ebc41.png" title=" Brandon clicks on selecciona la universidad choucair" width="1920"/>
+                <img src="7c586d692f3e76b00c0f9ac7e6827f1172fc087604db611cb6ca9cb503b599e9.png" title=" Brandon enters 'Automatizaci&ograve;n de Pruebas' into Automatizaci&ograve;n de Pruebas" width="1920"/>
+                <img src="c08c417d8ed9dd0b5c13e6ddfec213b2e9ecbf79532988e06d3de1e1974056ed.png" title=" Brandon clicks on Da click para buscar el curso" width="1920"/>
+                <img src="fa682631a49e86b9f5863dbb10d1e13c0dd4fb272b29eaac53c10f858aac2514.png" title=" Brandon clicks on Buscar curso" width="1920"/>
+                <img src="fa682631a49e86b9f5863dbb10d1e13c0dd4fb272b29eaac53c10f858aac2514.png" title=" Brandon search (completed)" width="1920"/>
+                <img src="fa682631a49e86b9f5863dbb10d1e13c0dd4fb272b29eaac53c10f858aac2514.png" title=" When he search of the course Automatizaci&ograve;n de Pruebas on the choucair academy platform (completed)" width="1920"/>
+                <img src="fa682631a49e86b9f5863dbb10d1e13c0dd4fb272b29eaac53c10f858aac2514.png" title=" Then he finds the course called resources Automatizaci&oacute;n dmjke Pruebas" width="1920"/>
+                <img src="fa682631a49e86b9f5863dbb10d1e13c0dd4fb272b29eaac53c10f858aac2514.png" title=" Then answer should be (true): <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

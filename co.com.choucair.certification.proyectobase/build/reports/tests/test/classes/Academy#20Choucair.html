@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.991s</div>
+<div class="counter">19.190s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,9 +76,16 @@
 <a name="Search for a automation course"></a>
 <h3 class="failures">Search for a automation course</h3>
 <span class="code">
-<pre>io.cucumber.java.PendingException: TODO: implement me
-	at co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.thanBrandonWantsToLearnAutomationAtTheAcademyChoucair(ChoucairAcademyStepDefinitions.java:21)
-	at ✽.than brandon wants to learn automation at the academy Choucair(file:///D:/Proyectos_IntelliJ_DevOps/co.com.choucair.certification.proyectobase/src/test/resources/features/academyChoucair.feature:10)
+<pre>java.lang.AssertionError: 
+Expected: &lt;true&gt;
+     but: was &lt;false&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:369)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:341)
+	at co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.heFindsTheCourseCalledResourcesAutomatizaciònDePruebas(ChoucairAcademyStepDefinitions.java:47)
+	at ✽.he finds the course called resources Automatización dmjke Pruebas(file:///D:/Proyectos_IntelliJ_DevOps/co.com.choucair.certification.proyectobase/src/test/resources/features/academyChoucair.feature:11)
 </pre>
 </span>
 </div>
@@ -95,7 +102,7 @@
 </thead>
 <tr>
 <td class="failures">Search for a automation course</td>
-<td class="failures">6.991s</td>
+<td class="failures">19.190s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -115,24 +122,36 @@ Search for a automation course(academy-choucair;search-for-a-automation-course)
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 98.0.4758.102 (resolved driver for Chrome 98)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\carlo\.cache\selenium\chromedriver\win32\98.0.4758.102\chromedriver.exe
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 62484
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 61309
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-feb 21, 2022 8:45:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+feb 24, 2022 4:55:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-feb 21, 2022 8:45:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+feb 24, 2022 4:55:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 98, so returning the closest version found: 97
-feb 21, 2022 8:45:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+feb 24, 2022 4:55:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFORMACIÓN: Found CDP implementation for version 98 of 97
-[Test worker] INFO  - ?[96m
-  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
- |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
-   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
-   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
 
 Search for a automation course
------------------------------------------------------------------------------?[0m
+-----------------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Then answer should be (true)?[0m
+[Test worker] ERROR  - ?[91m    Expected: &lt;true&gt; but: was &lt;false&gt;?[0m
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+Search for a automation course
+-----------------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Then answer should be (true)?[0m
+[Test worker] ERROR  - ?[91m    Expected: &lt;true&gt; but: was &lt;false&gt;?[0m
 </pre>
 </span>
 </div>
@@ -144,7 +163,7 @@ Search for a automation course
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 21/02/2022 08:45:59 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 24/02/2022 04:55:44 AM</p>
 </div>
 </div>
 </body>

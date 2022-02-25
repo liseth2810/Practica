@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Academy Choucair" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-02-21T19:45:51" hostname="CARLOS" time="6.991">
+<testsuite name="Academy Choucair" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-02-24T03:55:24" hostname="CARLOS" time="19.19">
   <properties/>
-  <testcase name="Search for a automation course" classname="Academy Choucair" time="6.991">
-    <failure message="io.cucumber.java.PendingException: TODO: implement me" type="io.cucumber.java.PendingException">io.cucumber.java.PendingException: TODO: implement me
-	at co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.thanBrandonWantsToLearnAutomationAtTheAcademyChoucair(ChoucairAcademyStepDefinitions.java:21)
-	at ✽.than brandon wants to learn automation at the academy Choucair(file:///D:/Proyectos_IntelliJ_DevOps/co.com.choucair.certification.proyectobase/src/test/resources/features/academyChoucair.feature:10)
+  <testcase name="Search for a automation course" classname="Academy Choucair" time="19.19">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;true&gt;&#13;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;true&gt;
+     but: was &lt;false&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:369)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:341)
+	at co.com.choucair.certification.proyectobase.stepdefinitions.ChoucairAcademyStepDefinitions.heFindsTheCourseCalledResourcesAutomatizaciònDePruebas(ChoucairAcademyStepDefinitions.java:47)
+	at ✽.he finds the course called resources Automatización dmjke Pruebas(file:///D:/Proyectos_IntelliJ_DevOps/co.com.choucair.certification.proyectobase/src/test/resources/features/academyChoucair.feature:11)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
@@ -20,23 +27,35 @@ Search for a automation course(academy-choucair;search-for-a-automation-course)
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 98.0.4758.102 (resolved driver for Chrome 98)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\carlo\.cache\selenium\chromedriver\win32\98.0.4758.102\chromedriver.exe
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 62484
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 61309
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-feb 21, 2022 8:45:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+feb 24, 2022 4:55:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-feb 21, 2022 8:45:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+feb 24, 2022 4:55:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 98, so returning the closest version found: 97
-feb 21, 2022 8:45:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+feb 24, 2022 4:55:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFORMACIÓN: Found CDP implementation for version 98 of 97
-[Test worker] INFO  - ?[96m
-  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
- |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
-   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
-   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
 
 Search for a automation course
------------------------------------------------------------------------------?[0m
+-----------------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Then answer should be (true)?[0m
+[Test worker] ERROR  - ?[91m    Expected: <true> but: was <false>?[0m
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+Search for a automation course
+-----------------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Then answer should be (true)?[0m
+[Test worker] ERROR  - ?[91m    Expected: <true> but: was <false>?[0m
 ]]></system-err>
 </testsuite>
